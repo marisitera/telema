@@ -22,5 +22,5 @@ Moodul võimaldab teil saata ja vastu võtta elektroonilisi dokumente kasutades 
 ## Kuidas saata ja vastuvõtta e-dokumente?
 
 [Ühenduse seadistamine](telema-setup)  
-[Sissetulevad e-dokumendid](http://www.dynamicspartners.ee/docs/en-us/T_24007800.htm)  
-[Väljaminevad e-dokumendid](http://www.dynamicspartners.ee/docs/en-us/T_24007801.htm)  
+[Sissetulevad e-dokumendid](inbound-edocuments)  
+[Väljaminevad e-dokumendid](outbound-edocuments)  
