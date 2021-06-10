@@ -31,14 +31,13 @@ Kui on vaja töödelda (salvestada BC-i dokumenti) käsitsi parandatud XML-faili
 
 ## Kuidas automatiseerida e-dokumentide vastuvõtmist ja salvestamist BC-ga
 
-To automate Telema EDI jobs, NAV Application Server must be set up and running the  **Job Queue**  functionality.
-Telema EDI-tööde automatiseerimiseks tuleb BC-i rakendusserver seadistada ja käivitada funktsioon **Töövood*.
+Telema EDI-tööde automatiseerimiseks tuleb BC-i rakendusserver seadistada ja käivitada funktsioon **Tööjärjekord*.
 
-Avage  **Töövoo mallid**:
+Avage  **Tööjärjekorra kanded**:
 
-·  Create new job entry for the  **Raport 24007801 Võta e-dokumendid Telemast** for automatic downloads from Telema server.
-·  Create new job entry for the  **Report 24007801 Salvesta e-dokumendid BC-i**  to automatically save the downloaded e-documents to NAV documents.
+·  Looge uus tööjärjekorra kanne **Aruanne 24007801 Võta e-dokumendid Telemast** automaatseteks allalaadimisteks Telema serverist.
+·  Looge uus tööjärjekorra kanne  **Aruanne 24007801 Salvesta e-dokumendid BC-i**  allalaaditud e-dokumentide automaatseks salvestamiseks BC-i dokumentidesse.
 
-Set up the schedule of the jobs on  **Recurrence**  FastTab.
+Pange paika tööde ajakava  **Korduvus**  kiirkaardil.
 
-In case errors appear during automatic handling of the documents you can setup notifications to be sent into the  **My Notifications** window of the  **Role Center**. To set up the notifications open  **Telema Setup** and assign the receiver(s) in the  **Notify on errors in NAS**  field.
+Kui dokumentide automaatse töötlemise ajal ilmnevad vead, saate häälestada rollikeskuse aknasse **Minu teavitused** saadetavad teated. Teatiste seadistamiseks avage **Telema EDI seadistus**  ja määrake väljal **Teata vigadest NAS-is** teatise vastuvõtja(d). 
