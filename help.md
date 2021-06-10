@@ -17,7 +17,7 @@ Moodul võimaldab teil saata ja vastu võtta elektroonilisi dokumente kasutades 
 2.	Ostutellimuse kinnituse saamine
 3.	Saadetise vastuvõtmine
 4.	Vastuvõtukinnituse väljastamine
-5.	Ostuarve (sh kreeditarve)  või [käsitletud ostuarve(eFlow)] vastuvõtmine (eflow-purch-invoice)
+5.	Ostuarve (sh kreeditarve)  või [käsitletud ostuarve(eFlow)](eflow-purch-invoice) vastuvõtmine 
 
 ## Kuidas saata ja vastuvõtta e-dokumente?
 
