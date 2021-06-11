@@ -22,7 +22,7 @@ Tüüpilised vead võivad olla järgmised:
 ·  E-dokument sisaldab tundmatut vastet
 ·  E-dokument sisaldab tundmatut kaupa
 
-Kui ilmnevad prbleemid e-dokumentidega, võite kasutada toimingut  **Vaata dokumendi XML-i** mis võimaldab dokumendi avada (veebibrauseris), salvestada ja kontrollida dokumendi sisu.
+Kui ilmnevad probleemid e-dokumentidega, võite kasutada toimingut  **Vaata dokumendi XML-i** mis võimaldab dokumendi avada (veebibrauseris), salvestada ja kontrollida dokumendi sisu.
 
 Kui e-dokumendi probleemi ei saa lahendada, võite e-dokumendi edasise töötlemise tühistada toiminguga  **Tühista dokument.**
 
@@ -34,7 +34,6 @@ Kui on vaja töödelda (salvestada BC-i dokumenti) käsitsi parandatud XML-faili
 Telema EDI-tööde automatiseerimiseks tuleb BC-i rakendusserver seadistada ja käivitada funktsioon **Tööjärjekord*.
 
 Avage  **Tööjärjekorra kanded**:
-
 ·  Looge uus tööjärjekorra kanne **Aruanne 24007801 Võta e-dokumendid Telemast** automaatseteks allalaadimisteks Telema serverist.
 ·  Looge uus tööjärjekorra kanne  **Aruanne 24007801 Salvesta e-dokumendid BC-i**  allalaaditud e-dokumentide automaatseks salvestamiseks BC-i dokumentidesse.
 
