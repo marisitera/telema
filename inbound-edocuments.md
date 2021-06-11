@@ -31,7 +31,7 @@ Kui on vaja töödelda (salvestada BC-i dokumenti) käsitsi parandatud XML-faili
 
 ## Kuidas automatiseerida e-dokumentide vastuvõtmist ja salvestamist BC-ga
 
-Telema EDI-tööde automatiseerimiseks tuleb BC-i rakendusserver seadistada ja käivitada funktsioon **Tööjärjekord*.
+Telema EDI-tööde automatiseerimiseks tuleb BC-i rakendusserver seadistada ja käivitada funktsioon **Tööjärjekord**.
 
 Avage  **Tööjärjekorra kanded**:
 ·  Looge uus tööjärjekorra kanne **Aruanne 24007801 Võta e-dokumendid Telemast** automaatseteks allalaadimisteks Telema serverist.
