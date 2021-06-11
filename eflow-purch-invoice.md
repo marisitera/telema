@@ -4,7 +4,7 @@
 
 Võimaldab salvestada Telema ’entrec’ tüüpi e-dokumente kui **Ostuarve** ja väljastada e-dokumendi kinnituse selle vastusena.
 
-Allpool on peamiste andmeüksuste kaardistamine ja kasutamise kirjeldus.
+Allpool on peamiste andmeüksuste kaardistamise ja kasutamise kirjeldus.
 
 E-dokumendi number salvestatakse **Ostuarve** väljale **E-arve kande nr.** kiirkaardil **Üldine**. Klõpsates väljal **E-arve kande nr.** avaneb  **Sissetulev E-dokument**, 
 kus saate vaadata kaasas olevat PDFi toiminguga **Vaata dokumendi PDF-i**.
@@ -23,7 +23,7 @@ See tähendab, et kui e-dokumendist leitakse faktooringupartner, siis määratak
 
 Kui e-dokumendist ei suudeta tuvastada, kes on **Makse saaja hankija**, määratakse see NAV põhiseadistuse alusel.
 
-Lisaks hankijaletele tuvastatakse e-dokumendist ka hankija pangakonto. Kui hankija pangakonto antud IBANi kohta on NAVist puudu, luuakse uus **Hankija pangakonto** ning määratakse see **Hankija kaart** peal kui **Eelistatud pangakonto**. 
+Lisaks hankijatele tuvastatakse e-dokumendist ka hankija pangakonto. Kui hankija pangakonto antud IBANi kohta on NAVist puudu, luuakse uus **Hankija pangakonto** ning määratakse see **Hankija kaart** peal kui **Eelistatud pangakonto**. 
 
 Vaata ka:  [Kuidas luua uusi hankijaid automaatselt](#kuidas-luua-uusi-hankijaid-automaatselt)
 
@@ -40,6 +40,7 @@ Lisaks täidetakse **Ostuarve** peal järgmised väljad:
 |**Valuuta tähis**|Currency|
 
 As  **Purchase Invoice**  lines e-document lines with the ’AccountType’ value ’E’ (expense lines) are saved.
+Kui **Ostuarve** read e-dokumendil kattuvad ridade ’KontoTüüp’ väärtusega ’E’ (kulu read) salvestatakse.
 
 Väljad täidetakse järgmiselt:
 
