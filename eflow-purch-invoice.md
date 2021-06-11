@@ -9,7 +9,7 @@ Allpool on peamiste andmeüksuste kaardistamine ja kasutamise kirjeldus.
 E-dokumendi number salvestatakse **Ostuarve** väljale **E-arve kande nr.** kiirkaardil **Üldine**. Klõpsates väljal **E-arve kande nr.** avaneb  **Sissetulev E-dokument**, 
 kus saate vaadata kaasas olevat PDFi toiminguga **Vaata dokumendi PDF-i**.
 
-**Hankija nr.** tuvastatakse järgnevate e-dokumendi elementide hulgast ja prioritiseeritakse antud järjekorras::
+**Müüja-hankija nr.** tuvastatakse järgnevate e-dokumendi elementide hulgast ja prioritiseeritakse antud järjekorras::
 1.  SellerParty/PartyCode
 2.  SellerParty/RegNum
 
@@ -19,63 +19,64 @@ kus saate vaadata kaasas olevat PDFi toiminguga **Vaata dokumendi PDF-i**.
 3.  PayToParty/PartyCode
 4.  PayToParty/RegNum
 
-See tähendab, et kui e-dokumendist leitakse faktooringupartner, siis on see määratakse kui **Makse saaja hankija nr.**
+See tähendab, et kui e-dokumendist leitakse faktooringupartner, siis määratakse see kui **Makse saaja hankija nr.**
 
-Kui **Makse saaja hankijat** ei suudeta e-dokumendist tuvastada, määratakse see NAV põhiseadistuse alusel.
+Kui e-dokumendist ei suudeta tuvastada, kes on **Makse saaja hankija**, määratakse see NAV põhiseadistuse alusel.
 
-Lisaks hankijaletele tuvastatakse e-dokumendist ka hankija pangakonto. If vendor bank account for the IBAN is missing from NAV, new  **Vendor Bank Account**  is created and assigned as a  **Prefered Bank Account**  on the  **Vendor**  card.
+Lisaks hankijaletele tuvastatakse e-dokumendist ka hankija pangakonto. Kui hankija pangakonto antud IBANi kohta on NAVist puudu, luuakse uus **Hankija pangakonto** ning määratakse see **Hankija kaart** peal kui **Eelistatud pangakonto**. 
 
-See also:  [How to create missing vendors automatically](#how-to-create-new-vendors-automatically)
+Vaata ka:  [Kuidas luua uusi hankijaid automaatselt](#kuidas-luua-uusi-hankijaid-automaatselt)
 
-In addition the following fields are filled in on the  **Purchase Invoice**:
+Lisaks täidetakse **Ostuarve** peal järgmised väljad:
 
-|Purchase Invoice field|E-document element|
+|Ostuarve väli|E-dokumendi element|
 |--|--|
-|**Posting Date**|TransactionDate|
-|**Document Date**|InvoiceDate|
-|**Due Date**|DueDate|
-|**Vendor Invoice No.**|SourceDocumentNum (type INVOICE)|
-|**Your Reference**|SourceDocumentNum (type ORDER)|
-|**Reference No.**|PaymentRefNum|
-|**Currency Code**|Currency|
+|**Konteerimiskuupäev**|TransactionDate|
+|**Dokumendi kuupäev**|InvoiceDate|
+|**Tähtaeg**|DueDate|
+|**Hankija arve nr.**|SourceDocumentNum (type INVOICE)|
+|**Sisseostja tähis**|SourceDocumentNum (type ORDER)|
+|**Makse viide**|PaymentRefNum|
+|**Valuuta tähis**|Currency|
 
 As  **Purchase Invoice**  lines e-document lines with the ’AccountType’ value ’E’ (expense lines) are saved.
 
-The fields are filled as follows:
+Väljad täidetakse järgmiselt:
 
-|Purchase Invoice Line field|E-document element or constant|
+|Väli Ostuarve Read|E-dokumendi element või konstant|
 |--|--|
-|**Type**|’PR konto’|
-|**No.**|AccountID|
-|**Description**|ItemDescription|
-|**Quantity**|’1’ or if EntryItemType=CRE then ’-1’|
-|**Direct Unit Cost**|Sum|
+|**Liik**|’PR konto’|
+|**Nr.**|AccountID|
+|**Kirjeldus**|ItemDescription|
+|**Kogus**|’1’ või kui EntryItemType=CRE siis ’-1’|
+|**Otsene ühikkulu KM-ga**|Sum|
 
-**Purchase Invoice**  line  **Dimensions**  are updated according to the dimension information presented in the  **E-Document**.
+**Ostuarve**  rida  **Dimensioonid**  uuendatakse vastavalt **e-dokumendis** esitatud dimensioonide teabele.
 
-After saving the  **Pucrhase Invoice**, e-document total amounts are compared with NAV document  **Total Amount**  and  **Total Amount incl. VAT**. If required, rounding line is added and/or VAT amount is corrected in NAV.
+Pärast **Ostuarve** salvestamist, e-dokumendi lõppsummasid võrreldakse NAV dokumendi summadega **Kokku KM-ta** ja **Kokku (KM-ga)**. Vajadusel lisatakse ümarduse rida ja/või korrigeeritakse KM summa NAV-is. 
 
-After posting the  **Purchase Invoice**, reply receipt containing reference to the posted invoice will be issued to inform about successful processing of the  **Inbound E-Document**.
+Pärast **Ostuarve** postitamist väljastatakse kinnitus, mis viitab postitatud arvele ja informeerib **Sissetuleva e-dokumendi** edukast käsitlemisest.
 
-If saving of the  **Inbound E-Document**  as a  **Purchase Invoice**  fails (eg. missing or incorrect data on the document), you can cancel the further processing of the e-document with the action  **Cancel Document**. As a result, reply receipt containing the error information will be issued. After that you can correct the entry document in Telema eFlow and send it again to NAV.
+Kui **Sissetuleva e-dokumendi** salvestamine **Ostuarvena** ebaõnnestub (näiteks puuduvad või valed andmed dokumendis), saate e-dokumendi edasise töötlemise tühistada toiminguga **Tühista dokument**. Selle tulemusena väljastatakse veateadet sisaldav vastukviitung. Pärast seda saate parandada kandedokumendi Telema eFlows ja saata selle uuesti NAVi.   
 
-## How to create new vendors automatically
 
-Missing vendors can be created automatically when Purchase Invoice (accounting entry document of expense invoice) is received.
+## Kuidas luua uusi hankijaid automaatselt
 
-Create  **Configuration Templates**  for the vendor table and choose fields and values you would like to fill in automatically for new vendors. Create several templates (domestic, foreign) if you need. Assign template(s) in the  **Countries/Regions**  list into the field  **New Vendor Template**. NAV identifies vendor country from the e-document and finds according template to create new vendor.
+Puuduvaid hankijaid saab automaatselt luua kui on saadud Ostuarve (raamatupidamise kandedokument või kuluarve). 
 
-The following vendor card fields will be filled based on the data in e-document:
+Looge  **Konf. mallid** hankija tabeli jaoks ja valiga väljad ja väärtused mida tahaksite, et automaatselt täidetaks uute hankijate loomisel. Vajadusel looge mitu malli (kodumaine, välismaine). Määrake mall(id) **Riigid/regioonid**  loendis väljale **Uue hankija mall**. NAV tuvastab hankija riigi e-dokumendist ja leiab vastava malli mille alusel luua uus hankija.
 
-Vendor field:
-**Name**
-**Registration No.**
-**VAT Registration No.**
-**Phone No.**
-**E-Mail**
-**Address**
-**City**
-**Post Code**
-**Country/Region Code**
+E-dokumendis sisalduvate andmete põhjal täidetakse järgmised hankijakaardi väljad:
 
-To enable this functionality open  **Telema Setup**  and check the  **Create New Vendors**.
+Hankija väli:
+**Nimetus**
+**Registreerimisnr.**
+**KM registreerimise nr.**
+**Telefon**
+**Meil**
+**Aaddress**
+**Linn**
+**Postiindeks**
+**Riigi/regiooni tähis**
+
+Funktsionaalsuse lubamiseks avage **Telema EDI seadistus** ja märkige **Loo uued hankijad**.
