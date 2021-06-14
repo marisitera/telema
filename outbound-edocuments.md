@@ -3,7 +3,7 @@
 ---
 # Väljaminevad e-dokumendid
 
-## Kuidas luua NAV-dokumendist e-dokument 
+## Kuidas luua BC-dokumendist e-dokument 
 Üldiselt ei ole vaja e-dokumente käsitsi luua. Soovitame seadistada e-dokumentide konteerimisel loomise **Telema EDI seadustus** all.
 
 E-dokumentide käsitsi loomiseks avage **Väljaminevad e-dokumendid** ja valige **Toimingud** vahekaardil **Loo dokument BC-st** sobiv toiming.
@@ -25,8 +25,8 @@ Kui e-dokumendi saatmine ebaõnnestub, värskendatakse **Käsitlemise staatus** 
 Kui valite suvandi **Peatu vea korral**, peatatakse toiming esimese tõrke korral ja kuvatakse üksikasjalik tõrketeade.
 
 Tüüpilised vea põhjused võivad olla järgmised:
-·  E-dokument ei vasta formaadinõuetele
-·  E-dokument ei vasta vastuvõtja seatud nõuetele
+- E-dokument ei vasta formaadinõuetele
+- E-dokument ei vasta vastuvõtja seatud nõuetele
 
 Kui ilmnevad probleemid e-dokumentidega, võite kasutada toimingut **Vaata dokumendi XML-i**, mis võimaldab dokumendi avada (veebibrauseris), salvestada ja kontrollida dokumendi sisu.
 
@@ -36,15 +36,14 @@ Kui on vajadus töödelda (saata Telemasse) käsitsi parandatud XML-failiga, kas
 
 **Väljaminev e-dokument** võidakse tagasilükata Telema serveri poolt kui ta on duplikaat. Antud vea põhjuseid võib olla kaks:
 
-·  See on tõesti duplikaat (sama saatja dokument, sama dokumendi tüübi- ja numbriga samal aastal). See võib juhtuda kui kasutaja loob dokumendi käsitsi.
-·  Dokument saadeti Telema serverisse, aga vastuvõtu kinnitus ei jõudnud tagasi BC-i ja dokumendi **Käsitlemise staatus** ei ole **Saadetud Telemasse**.
+- See on tõesti duplikaat (sama saatja dokument, sama dokumendi tüübi- ja numbriga samal aastal). See võib juhtuda kui kasutaja loob dokumendi käsitsi.
+- Dokument saadeti Telema serverisse, aga vastuvõtu kinnitus ei jõudnud tagasi BC-i ja dokumendi **Käsitlemise staatus** ei ole **Saadetud Telemasse**.
 
 Mõlemal juhul peaks kasutaja tühistama edasised käsitlemise katsed, kasutades toimingut **Tühista dokument.**
 
 ## Kuidas automatiseerida e-dokumentide saatmist BC-ga
 Telema EDI-tööde automatiseerimiseks tuleb BC-i rakendusserver seadistada ja käivitada funktsioon **Tööjärjekord**.
 
-Avage  **Tööjärjekorra kanded**. Looge uus tööjärjekorra kanne **Aruanne 24007802 Create new job entry for the  **Report 24007802 Saada e-dokumendid Telemasse**. 
-Pange paika tööde ajakava  **Korduvus**  kiirkaardil.
+Avage  **Tööjärjekorra kanded**. Looge uus tööjärjekorra kanne **Aruanne 24007802 Saada e-dokumendid**. 
 
-Kui dokumentide automaatse töötlemise ajal ilmnevad vead, saate häälestada rollikeskuse aknasse **Minu teavitused** saadetavad teated. Teatiste seadistamiseks avage **Telema EDI seadistus**  ja määrake väljal **Teata vigadest NAS-is** teatise vastuvõtja(d). 
+Pange paika tööde ajakava  **Korduvus**  kiirkaardil.
