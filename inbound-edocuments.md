@@ -19,8 +19,8 @@ Kui e-dokumendi salvestamine ebaõnnestub, värskendatakse **Käsitlemise staatu
 Kui valite suvandi **Peatu vea korral**, peatatakse toiming esimese tõrke korral ja kuvatakse üksikasjalik tõrketeade.
 
 Tüüpilised vead võivad olla järgmised:
-·  E-dokument sisaldab tundmatut vastet
-·  E-dokument sisaldab tundmatut kaupa
+- E-dokument sisaldab tundmatut vastet
+- E-dokument sisaldab tundmatut kaupa
 
 Kui ilmnevad probleemid e-dokumentidega, võite kasutada toimingut  **Vaata dokumendi XML-i** mis võimaldab dokumendi avada (veebibrauseris), salvestada ja kontrollida dokumendi sisu.
 
@@ -34,9 +34,7 @@ Kui on vaja töödelda (salvestada BC-i dokumenti) käsitsi parandatud XML-faili
 Telema EDI-tööde automatiseerimiseks tuleb BC-i rakendusserver seadistada ja käivitada funktsioon **Tööjärjekord**.
 
 Avage  **Tööjärjekorra kanded**:
-·  Looge uus tööjärjekorra kanne **Aruanne 24007801 Võta e-dokumendid Telemast** automaatseteks allalaadimisteks Telema serverist.
-·  Looge uus tööjärjekorra kanne  **Aruanne 24007801 Salvesta e-dokumendid BC-i**  allalaaditud e-dokumentide automaatseks salvestamiseks BC-i dokumentidesse.
+- Looge uus tööjärjekorra kanne **Aruanne 24007801 Võta e-dokumendid Telemast** automaatseteks allalaadimisteks Telema serverist.
+- Looge uus tööjärjekorra kanne  **Aruanne 24007801 Salvesta e-dokumendid BC-i**  allalaaditud e-dokumentide automaatseks salvestamiseks BC-i dokumentidesse.
 
 Pange paika tööde ajakava  **Korduvus**  kiirkaardil.
-
-Kui dokumentide automaatse töötlemise ajal ilmnevad vead, saate häälestada rollikeskuse aknasse **Minu teavitused** saadetavad teated. Teatiste seadistamiseks avage **Telema EDI seadistus**  ja määrake väljal **Teata vigadest NAS-is** teatise vastuvõtja(d). 
