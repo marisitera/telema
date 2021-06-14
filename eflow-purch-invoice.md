@@ -43,7 +43,7 @@ Kui **Ostuarve** e-dokumendi real on ’AccountType’ väärtuseks ’E’ siis
 
 Väljad täidetakse järgmiselt:
 
-|Väli Ostuarve Read|E-dokumendi element või konstant|
+|Väli Ostuarve read|E-dokumendi element või konstant|
 |--|--|
 |**Liik**|’PR konto’|
 |**Nr.**|AccountID|
