@@ -1,6 +1,6 @@
 ---
 ---
-# Receciving Processed Purchase Invoice (eFlow accounting entry document)
+# Käsitletud ostuarve vastuvõtmine (eFlow raamatupidamiskande dokument) 
 
 Võimaldab salvestada Telema ’entrec’ tüüpi e-dokumente kui **Ostuarve** ja väljastada e-dokumendi kinnituse selle vastusena.
 
@@ -21,9 +21,9 @@ kus saate vaadata kaasas olevat PDFi toiminguga **Vaata dokumendi PDF-i**.
 
 See tähendab, et kui e-dokumendist leitakse faktooringupartner, siis määratakse see kui **Makse saaja hankija nr.**
 
-Kui e-dokumendist ei suudeta tuvastada, kes on **Makse saaja hankija**, määratakse see NAV põhiseadistuse alusel.
+Kui e-dokumendist ei suudeta tuvastada, kes on **Makse saaja hankija**, määratakse see BC põhiseadistuse alusel.
 
-Lisaks hankijatele tuvastatakse e-dokumendist ka hankija pangakonto. Kui hankija pangakonto antud IBANi kohta on NAVist puudu, luuakse uus **Hankija pangakonto** ning määratakse see **Hankija kaart** peal kui **Eelistatud pangakonto**. 
+Lisaks hankijatele tuvastatakse e-dokumendist ka hankija pangakonto. Kui hankija pangakonto antud IBANi kohta on BC-ist puudu, luuakse uus **Hankija pangakonto** ning määratakse see **Hankija kaart** peal kui **Eelistatud pangakonto**. 
 
 Vaata ka:  [Kuidas luua uusi hankijaid automaatselt](#kuidas-luua-uusi-hankijaid-automaatselt)
 
@@ -39,8 +39,7 @@ Lisaks täidetakse **Ostuarve** peal järgmised väljad:
 |**Makse viide**|PaymentRefNum|
 |**Valuuta tähis**|Currency|
 
-As  **Purchase Invoice**  lines e-document lines with the ’AccountType’ value ’E’ (expense lines) are saved.
-Kui **Ostuarve** read e-dokumendil kattuvad ridade ’KontoTüüp’ väärtusega ’E’ (kulu read) salvestatakse.
+Kui **Ostuarve** e-dokumendi real on ’AccountType’ väärtuseks ’E’ siis (kulu read) salvestatakse ostuarvele. 
 
 Väljad täidetakse järgmiselt:
 
@@ -54,11 +53,11 @@ Väljad täidetakse järgmiselt:
 
 **Ostuarve**  rida  **Dimensioonid**  uuendatakse vastavalt **e-dokumendis** esitatud dimensioonide teabele.
 
-Pärast **Ostuarve** salvestamist, e-dokumendi lõppsummasid võrreldakse NAV dokumendi summadega **Kokku KM-ta** ja **Kokku (KM-ga)**. Vajadusel lisatakse ümarduse rida ja/või korrigeeritakse KM summa NAV-is. 
+Pärast **Ostuarve** salvestamist, e-dokumendi lõppsummasid võrreldakse BC dokumendi summadega **Kokku KM-ta** ja **Kokku (KM-ga)**. Vajadusel lisatakse ümarduse rida ja/või korrigeeritakse KM summa BC-is. 
 
 Pärast **Ostuarve** postitamist väljastatakse kinnitus, mis viitab postitatud arvele ja informeerib **Sissetuleva e-dokumendi** edukast käsitlemisest.
 
-Kui **Sissetuleva e-dokumendi** salvestamine **Ostuarvena** ebaõnnestub (näiteks puuduvad või valed andmed dokumendis), saate e-dokumendi edasise töötlemise tühistada toiminguga **Tühista dokument**. Selle tulemusena väljastatakse veateadet sisaldav vastukviitung. Pärast seda saate parandada kandedokumendi Telema eFlows ja saata selle uuesti NAVi.   
+Kui **Sissetuleva e-dokumendi** salvestamine **Ostuarvena** ebaõnnestub (näiteks puuduvad või valed andmed dokumendis), saate e-dokumendi edasise töötlemise tühistada toiminguga **Tühista dokument**. Selle tulemusena väljastatakse veateadet sisaldav vastukviitung. Pärast seda saate parandada kandedokumendi Telema eFlows ja saata selle uuesti BC-sse.   
 
 
 ## Kuidas luua uusi hankijaid automaatselt
