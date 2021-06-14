@@ -68,15 +68,16 @@ Looge  **Konf. mallid** hankija tabeli jaoks ja valiga väljad ja väärtused mi
 
 E-dokumendis sisalduvate andmete põhjal täidetakse järgmised hankijakaardi väljad:
 
-Hankija väli:
-**Nimetus**
-**Registreerimisnr.**
-**KM registreerimise nr.**
-**Telefon**
-**Meil**
-**Aaddress**
-**Linn**
-**Postiindeks**
-**Riigi/regiooni tähis**
+|Hankija väli:|
+|--|
+|**Nimetus**|
+|**Registreerimisnr.**|
+|**KM registreerimise nr.**|
+|**Telefon**|
+|**Meil**|
+|**Aaddress**|
+|**Linn**|
+|**Postiindeks**|
+|**Riigi/regiooni tähis**|
 
 Funktsionaalsuse lubamiseks avage **Telema EDI seadistus** ja märkige **Loo uued hankijad**.
