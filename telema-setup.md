@@ -14,7 +14,7 @@ Väli: |
 
 Peale kiirkaardi **Ühendus**  täitmist kasutage funktsiooni **Testi ühendust** kindlustamaks, et ühendus Telemaga on loodud.
 
-# Ettevõtetevaheline dokumendivahetus BC's
+## Ettevõtetevaheline dokumendivahetus BC's
 
 Dokumentide saatmiseks avage **Telema EDI seadistus** ning aktiveerige märkeruut **Avalda e-document veebiteenus** - see võimaldab dokumendivahetuse ettevõtete Business Centralite vahel.
 Seejärel avage **Kliendid** loendist **Kliendi kaart** ning kiirkaardil Telema EDI valige **Saatmise viis** *BC e-dokumendi veebiteenus*. 
