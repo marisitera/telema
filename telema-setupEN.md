@@ -26,7 +26,7 @@ Field:
 **E-Document Web Service Key** |
 
 To receive documents, you must provide the sender with the following information: web service URL, user name and password.
-To do this, open **Web Services** and select **SOAP URL** from the **TED E-Document Web Service** line. This is the **E-Document Web Service URL**.
+To do this, open **Web Services** and select **OData V4 URL** from the **TED E-Document Web Service** line. This is the **E-Document Web Service URL**.
 Then open **Users** and create a user for the sending company. Specify **User Name** and **Web Service Access Key**. Under **Actions**, you can specify what will be the **Key Expiration Date** or set it to **Key Never Expires**.
 
 
