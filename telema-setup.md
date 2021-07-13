@@ -27,7 +27,7 @@ Väli: |
 **E-dokument veebiteenuse parool** |
 
 Dokumentide vastuvõtmiseks peate edastama saatjale järgnevad andmed veebiteenuse URLi, kasutaja ning parooli.
-Selleks avage **Veebiteenused** ning valige objekti **TED E-Document Web Service** rea pealt **SOAP URL**. See ongi **E-dokument veebiteenuse URL**.
+Selleks avage **Veebiteenused** ning valige objekti **TED E-Document Web Service** rea pealt **OData V4 URL**. See ongi **E-dokument veebiteenuse URL**.
 Seejärel avage **Kasutajad** ning looge kasutaja saatja ettevõttele. Määrake **Kasutajanimi** ning **Veebiteenuse juurdepääsu võti**. Toimingute alt saate määrata kui kaua **Võtme aegumiskuupäeva** või määrata, et **Võti ei aegu kunagi**.
 
 
